@@ -15,3 +15,27 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+var slides, slides_total, slide_current;
+
+document.addEventListener('DOMContentLoaded', function(){
+	slides = document.getElementsByClassName('col-sm-12');
+	slides_total = slides.length;
+	slide_current=0;
+	window.setInterval(function(){
+		if(slide_current >= slides_total-1){
+			slide_current = 0;
+		} else {
+			slide_current++;
+		}
+		changePicture(slide_current);
+		console.log(slide_current);
+	}, 3000);
+});
+
+function changePicture(slide) {
+	for(var i = 0; i < slides_total; i++){
+		slides[i].style.display = 'none';
+	}
+	slides[slide].style.display = 'block';
+};
