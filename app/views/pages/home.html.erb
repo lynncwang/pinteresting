@@ -1,8 +1,14 @@
 <div class="jumbotron center">
 
 <h1>Welcome to the Nailbar</h1>
-<p><%= link_to "Sign up", "http://google.com", target: "_blank", class: "btn btn-primary btn-lg" %>
-<%= link_to "Log in", "http://google.com", target: "_blank", class: "btn btn-warning btn-lg" %></p>
+<% if user_signed_in? %>
+  
+<% else %>
+
+  <p><%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+  <%= link_to "Log in", new_user_session_path, class: "btn btn-warning btn-lg" %>
+</p>
+<% end %>
 
 </div>
 <div class="container">

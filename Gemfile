@@ -43,6 +43,8 @@ end
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem 'devise', '~> 3.1.0rc2'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
