@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	        slide_current = 0;
 	      }
 	      changePicture(slide_current);
+	      ga('send', 'event', 'slider', 'clickforward', 'clicked forward on slide show', 1);
 		});
 
 	document.getElementsByClassName('restart')[0].addEventListener('click', function () {
