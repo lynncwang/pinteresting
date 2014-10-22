@@ -1,4 +1,4 @@
-$body-bg: pink;
+$body-bg: #C5E3BF;
 $navbar-default-bg: #16a085;
 $navbar-default-link-color: #fff;
 
@@ -11,7 +11,7 @@ $jumbotron-bg: #ecf0f1;
 	text-align: center;
 }
 
-.image2, .image3 {
+.image2, .image3, .image4, .image5, .image6 {
 	display: none;
 }
 
@@ -21,4 +21,14 @@ $jumbotron-bg: #ecf0f1;
 		width: 130px;
 		padding-top: 0px;
 	}
+}
+
+.home-container {
+	padding: 35px;
+	width: 100%;
+	text-align: center;
+}
+
+.home-buttons {
+	text-align: center;
 }

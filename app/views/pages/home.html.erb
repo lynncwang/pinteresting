@@ -1,8 +1,8 @@
 <div class="jumbotron center">
 
-<h1>Welcome to the Nailbar</h1>
+<h1>Welcome to Europe</h1>
 <% if user_signed_in? %>
-  
+  <p>Hello again! Escape to Europe through these photos.</p>
 <% else %>
 
   <p><%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
@@ -11,16 +11,38 @@
 <% end %>
 
 </div>
-<div class="container">
+<div class="home-container">
   <div class="row">
     <div class="col-sm-12 image1">
-      <img src="http://placekitten.com/700/300" alt="">
+      <%= image_tag("sax1.jpg") %>
     </div>
     <div class="col-sm-12 image2">
-      <img src="http://placekitten.com/699/300" alt="">
+      <%= image_tag("sax2.jpg") %>
     </div>
     <div class="col-sm-12 image3">
-      <img src="http://placekitten.com/701/300" alt="">
+      <%= image_tag("sax3.jpg") %>
+    </div>
+    <div class="col-sm-12 image4">
+      <%= image_tag("sax4.jpg") %>
+    </div>
+    <div class="col-sm-12 image5">
+      <%= image_tag("sax5.jpg") %>
+    </div>
+    <div class="col-sm-12 image6">
+      <%= image_tag("sax6.jpg") %>
     </div>
   </div>
 </div>
+  <div class="container home-buttons">
+    <div class="btn backward btn-danger" id="backward">
+      <p>Backward</p>
+    </div>
+    <div class="btn restart btn-success" id="restart">
+      <p>Restart</p>
+    </div>
+    <div class="btn forward btn-info" id="forward">
+      <p>Forward</p>
+    </div>
+
+  </div>
+
