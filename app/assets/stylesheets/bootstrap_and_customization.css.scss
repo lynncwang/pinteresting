@@ -11,7 +11,7 @@ $jumbotron-bg: #ecf0f1;
 	text-align: center;
 }
 
-.image2, .image3, .image4, .image5, .image6 {
+.image2, .image3, .image4, .image5 {
 	display: none;
 }
 
@@ -31,4 +31,12 @@ $jumbotron-bg: #ecf0f1;
 
 .home-buttons {
 	text-align: center;
+}
+
+#call {
+	margin-bottom: 20px;
+}
+
+.pins-index {
+	width: 500px;
 }
