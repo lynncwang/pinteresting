@@ -45,6 +45,8 @@ gem 'unicorn'
 
 gem 'devise', '~> 3.1.0rc2'
 
+gem 'paperclip', github: 'thoughtbot/paperclip'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
