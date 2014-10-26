@@ -84,7 +84,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'nailbar.herokuapp.com' }
 
   # Sets Paperclip to upload images to Amazon s3
-  config.paperclip.defaults = {
+  config.paperclip_defaults = {
     storage: s3,
     s3_credentials: {
       bucket: ENV['AWS_BUCKET'],
