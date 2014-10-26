@@ -47,6 +47,8 @@ gem 'devise', '~> 3.1.0rc2'
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
+gem 'aws-sdk', '~> 1.20.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
